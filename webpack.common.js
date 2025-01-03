@@ -15,6 +15,7 @@ module.exports = {
   },
   module: {
     rules: [
+      // Menangani file CSS
       {
         test: /\.css$/,
         use: [
@@ -23,6 +24,18 @@ module.exports = {
           },
           {
             loader: 'css-loader',
+          },
+        ],
+      },
+      // Menangani file gambar (jpg, png, gif, svg)
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[hash].[ext]', // Tentukan nama dan path output
+            },
           },
         ],
       },

@@ -1,0 +1,72 @@
+/* Responsif untuk layar kecil */
+/* Untuk layar dengan lebar maksimum 480px (Smartphone) */
+@media screen and (max-width: 480px) {
+    .hero-container {
+        height: 70vh; /* Kurangi tinggi untuk layar lebih kecil */
+    .hero-inner {
+        text-align: center;
+    }
+    }
+
+    .hero-inner {
+        font-size: 1em; /* Ukuran font lebih kecil untuk layar kecil */
+        top: 60%; /* Posisi vertikal lebih rendah */
+        left: 10%; /* Geser teks lebih dekat ke tepi */
+        text-align: center; /* Teks rata tengah untuk layar kecil */
+        transform: translate(0, -50%); /* Hilangkan pergeseran horizontal */
+    }
+
+    .hero-images {
+        width: 100%; /* Gambar single pada layar kecil */
+    }
+
+    .hero-image {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-container {
+        height: 80vh; /* Kurangi tinggi agar lebih pas pada layar tablet */
+    }
+
+
+
+    .location-section {
+      flex-direction: column; /* Elemen ditumpuk vertikal */
+      align-items: center; /* Elemen di tengah */
+    }
+  
+    .location-section .map,
+    .location-section address {
+      max-width: 100%; /* Lebar penuh */
+    }
+  
+    .location-section h2,
+    .location-section p {
+      text-align: center;
+    }
+    .contact-text,
+    .contact-section {
+      max-width: 100%; /* Full width di layar kecil */
+    }
+
+    .about-content {
+        flex-direction: column; 
+        gap: 30px;
+      }
+    
+      .about-images {
+        align-items: center; 
+      }
+    
+      .about-images img {
+        max-width: 100%; 
+      }
+  }
+  
+  
+ 
+    

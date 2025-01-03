@@ -12,27 +12,34 @@ class AppHeader extends HTMLElement {
             display: block;
           }
           .header {
-            color: white;
-            background-color: black;
-            
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px; /* Atur tinggi navbar */
+            color: white; /* Pastikan di atas hero section */
+            background-color: #222;
+            z-index: 1000;
+          }
+       
+          .header-title {
+            margin-left: 50px;
+            width: 350px;
+            height: auto;
           }
           
-          .header-title {
-            margin-left: 28px;
-          }
-
           .app-bar {
             display: flex;
             justify-content: space-betweenw;
             align-items: center;
-            padding: 10px;
+            padding: 1px;
+            padding-right: 10px;
             margin: auto;
           }
 
           .app-logo {
             display: flex;
             align-items: center;
-            flex-grow: 4
+            flex-grow: 4;
           }
 
           .app-logo img {
@@ -55,14 +62,14 @@ class AppHeader extends HTMLElement {
             list-style: none;
             display: flex; 
             justify-content: flex-end; 
-            margin: 0;
+            margin-right: 50px;
             padding: 0;
             text-decoration: none;
           }
 
           .nav-item {
             margin: 0;
-            background-color: black;
+            background-color: #222;
             
           }
 
@@ -84,7 +91,7 @@ class AppHeader extends HTMLElement {
             font-weight: 400;
             font-size: 1.5em;
             color: white;
-            background-color: black;
+            background-color: #222;
             text-decoration: none;
             padding: 10px;
             transition: background-color 0.3s;
@@ -150,14 +157,13 @@ class AppHeader extends HTMLElement {
         <header class="header">
           <nav class="app-bar">
             <div class="app-logo">
-              <h1 class="header-title">Prime Luxe Cars</h1>
+              <img class="header-title" src="/images/logo/logo.png" alt=""> 
             </div>
             <a href="" id="menu" class="header-menu">☰</a>
             <ul id="drawer" class="nav">
               <li class="nav-item"><a href="#">Home</a></li>
               <li class="nav-item"><a href="#/cars">Cars</a></li>
               <li class="nav-item"><a href="#/contactus">Contact Us</a></li>
-              <li class="nav-item"><a href="https://www.instagram.com/shandyariadyp/">About Us</a></li>
               <li class="nav-item"><a href="#/checkout">Checkout</a></li>
             </ul>
           </nav>
