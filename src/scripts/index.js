@@ -4,6 +4,7 @@ import '../styles/responsive.css';
 import App from './views/app'; // Impor App dari views
 import './components/app-header.js'; // Impor custom element
 import './components/app-footer.js';
+import swRegister from './utils/sw-register.js';
 
 // Inisialisasi aplikasi
 const app = new App({
@@ -16,4 +17,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });

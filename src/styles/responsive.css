@@ -3,9 +3,7 @@
 @media screen and (max-width: 480px) {
     .hero-container {
         height: 70vh; /* Kurangi tinggi untuk layar lebih kecil */
-    .hero-inner {
-        text-align: center;
-    }
+  
     }
 
     .hero-inner {
@@ -24,13 +22,38 @@
         background-size: cover;
         background-position: center;
     }
+
+    .new-arrival-inner h1 {
+      font-size: 1.5rem; /* Ukuran font lebih kecil untuk layar sangat kecil */
+  }
+
+  .new-arrival-inner p {
+      font-size: 1rem; /* Ukuran font lebih kecil untuk layar sangat kecil */
+  }
+
+  .new-arrival-image {
+      height: 200px; /* Tinggi gambar lebih kecil untuk layar sangat kecil */
+  }
 }
 
 
 @media (max-width: 768px) {
     .hero-container {
-        height: 80vh; /* Kurangi tinggi agar lebih pas pada layar tablet */
+      height: 80vh; /* Kurangi tinggi agar lebih pas pada layar tablet */
     }
+
+     .new-arrival-inner h1 {
+        font-size: 2rem; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .new-arrival-inner p {
+        font-size: 1.2rem; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .new-arrival-image {
+        height: 300px; /* Tinggi gambar lebih kecil untuk layar kecil */
+    }
+
 
 
 
@@ -69,4 +92,11 @@
   
   
  
-    
+  @media (max-width: 768px) {
+
+  }
+  
+  @media (max-width: 480px) {
+
+  }
+  

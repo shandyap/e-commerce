@@ -274,18 +274,21 @@
   color: #0056b3;
 }
 
-
 .new-arrival-container {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to bottom, #dc6d18, #000000 );
+  background: linear-gradient(to bottom, #dc6d18, #000000);
 }
 
 .new-arrival-inner {
-  top: 50%; /* Posisikan di tengah vertikal */
-  left: 50%; /* Posisikan di tengah horizontal */
-  transform: translate(-40%, 300%); /* Pusatkan secara sempurna */
+  display: flex; /* Menggunakan Flexbox */
+  flex-direction: column; /* Mengatur arah flex menjadi kolom */
+  justify-content: center; /* Pusatkan secara vertikal */
+  align-items: center; /* Pusatkan secara horizontal */
+  height: 100%; /* Pastikan tinggi 100% untuk memanfaatkan ruang */
   z-index: 10;
+  margin: 0 auto; /* Pusatkan konten */
+  padding: 20px; /* Tambahkan padding */
 }
 
 .new-arrival-inner h1 {
@@ -301,7 +304,7 @@
 
 .new-arrival-image {
   height: 400px;
-  width: auto;
+  width: 100%; /* Ubah menjadi 100% untuk responsif */
   background-size: cover;
   background-position: center;
   margin-bottom: 40px;
